@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fr_listing"
+    android:id="@+id/app_navigation">
+
+
+    <fragment
+        android:id="@+id/fr_listing"
+        android:name="com.example.testgradle.ui.fragment.EmployeeListingFragment"
+        android:label="Employees"
+        tools:layout="@layout/fragment_employee_listing">
+    </fragment>
+
+    <fragment
+        android:id="@+id/fr_add"
+        android:name="com.example.testgradle.ui.fragment.AddUpdateFragment"
+        android:label="Add Employee"
+        tools:layout="@layout/fragment_add_update"/>
+    <fragment
+        android:id="@+id/fr_view_employee"
+        android:name="com.example.testgradle.ui.fragment.ViewEmployeeFragment"
+        android:label="Employee"
+        tools:layout="@layout/fragment_view_employee"/>
+
+</navigation>
